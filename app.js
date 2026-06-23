@@ -7,8 +7,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const productRouts = require('./routs/productroutes');
-const expenseRutes = require('./routs/expenseroutes');
+const productRouts = require('./routs/productRoutes');
+const expenseRutes = require('./routs/expenseRoutes');
 
 app.use('/product', productRouts);
 app.use('/expense', expenseRutes);
