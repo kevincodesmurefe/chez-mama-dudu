@@ -1,4 +1,4 @@
-const pool = require('../db/connection.js');
+const pool = require('../config/connection.js');
 const getProducts = async (req,res) => {
     try {
         const result = await pool.query('SELECT * FROM product ORDER BY id');

@@ -1,4 +1,4 @@
-const pool = require('../db/connection.js');
+const pool = require('../config/connection.js');
 
 const getExpenses = async (req,res) => {
     try {
